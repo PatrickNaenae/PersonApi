@@ -16,7 +16,7 @@ To set up and run the Person API locally, follow these steps:
 - Virtual environment (recommended)
 
 ### Clone the Repository
-git clonehttps://github.com/PatrickNaenae/PersonApi.git
+git clone https://github.com/PatrickNaenae/PersonApi.git
 cd person-api
 
 ### Create a Virtual Environment (Optional but Recommended)
