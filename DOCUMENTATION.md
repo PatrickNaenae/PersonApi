@@ -111,6 +111,102 @@ This API allows users to manage person records along with their associated addre
 - **Response**:
   - Status: 204 No Content
 
+#### `GET /api/?name={full_name}`
+- **Description**: Retrieve details of a specific person by name.
+- **Request**: None
+- **Response**:
+- Status: 200 OK
+- Body:
+```json
+Copy code
+{
+    "id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com"
+}
+```
+
+#### `GET /api/?age={age}`
+- **Description**: Retrieve a list of persons by age.
+- **Request**: None
+- **Response**:
+- Status: 200 OK
+- Body:
+```json
+[
+    {
+        "id": 1,
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com"
+    },
+    ...
+]
+```
+
+#### `GET /api/?email={email}`
+- **Description**: Retrieve a list of persons by email.
+- **Request**: None
+- **Response**:
+- Status: 200 OK
+- Body:
+```json
+[
+    {
+        "id": 1,
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com"
+    },
+    ...
+]
+```
+
+#### `GET /api/{user_id}/?name={full_name}`
+- **Description**: Retrieve details of a specific person by name with ID.
+- **Request**: None
+- **Response**:
+- Status: 200 OK
+- Body:
+```json
+{
+    "id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com"
+}
+```
+
+#### `PUT /api/{user_id}/?name={full_name}`
+- **Description**: Update details of an existing person by name with ID.
+- **Request**:
+- Body:
+```json
+{
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "email": "jane.doe@example.com"
+}
+```
+- **Response**:
+- Status: 200 OK
+- Body:
+```json
+{
+    "id": 1,
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "email": "jane.doe@example.com"
+}
+```
+
+#### `DELETE /api/{user_id}/?name={full_name}`
+- **Description**: Delete a person by name with ID.
+- **Request**: None
+- **Response**:
+- Status: 204 No Content
+
 ## Limitations and Assumptions
 - The API does not handle authentication and authorization for simplicity.
 - Error handling is basic and may not cover all edge cases.
