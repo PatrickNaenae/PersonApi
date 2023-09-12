@@ -1,47 +1,51 @@
 import requests
 
-BASE_URL = 'http://localhost:8000/api/person/' 
-
-# Create
-person_data = {
-    "first_name": "Mark",
-    "last_name": "Essien",
-    "email": "mark.essien@example.com"
-}
-response = requests.post(BASE_URL, json=person_data)
+BASE_URL = 'http://127.0.0.1:8000/api/'  
 
 
-if response.status_code == 201:
-    print("Person created successfully")
-else:
-    print(f"Error creating person. Status code: {response.status_code}")
+def test_create_person():
+    data = {
+        "first_name": "John",
+        "last_name": "Doe",
+        "age": 30,
+        "email": "john.doe@example.com"
+    }
 
-# Read
-response = requests.get(BASE_URL + '15/')  
+    response = requests.post(BASE_URL, json=data)
 
-if response.status_code == 200:
-    print("Person details fetched successfully")
-else:
-    print(f"Error fetching person details. Status code: {response.status_code}")
+    assert response.status_code == 201
 
-# Update
-updated_data = {
-    "first_name": "Mark",
-    "last_name": "Essien",
-    "email": "updated.email@example.com"
-}
-response = requests.put(BASE_URL + '15/', json=updated_data) 
-print(response.content)
 
-if response.status_code == 200:
-    print("Person details updated successfully")
-else:
-    print(f"Error updating person details. Status code: {response.status_code}")
+def test_get_person():
+    response = requests.get(BASE_URL + '3/')  
+    print(response.content)
 
-# Delete
-response = requests.delete(BASE_URL + '15/')  
+    assert response.status_code == 200
+    assert response.json()["first_name"] == "John"
 
-if response.status_code == 204:
-    print("Person deleted successfully")
-else:
-    print(f"Error deleting person. Status code: {response.status_code}")
+
+def test_update_person():
+    data = {
+        "first_name": "John",
+        "last_name": "Smith",
+        "age": 31,
+        "email": "john.smith@example.com"
+    }
+
+    response = requests.put(BASE_URL + '3/', json=data)  
+
+    assert response.status_code == 200
+    assert response.json()["last_name"] == "Smith"
+
+
+def test_delete_person():
+    response = requests.delete(BASE_URL + '3/')  
+
+    assert response.status_code == 204
+
+
+if __name__ == "__main__":
+    test_create_person()
+    test_get_person()
+    test_update_person()
+    test_delete_person()
