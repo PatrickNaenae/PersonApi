@@ -59,6 +59,7 @@ You can interact with the Person API by making HTTP requests to the provided end
             "id": 1,
             "first_name": "John",
             "last_name": "Doe",
+            "age": 27,
             "email": "john.doe@example.com"
         },
         ...
@@ -77,6 +78,7 @@ You can interact with the Person API by making HTTP requests to the provided end
         "id": 1,
         "first_name": "John",
         "last_name": "Doe",
+        "age": 27,
         "email": "john.doe@example.com"
     }
     ```
@@ -90,6 +92,7 @@ You can interact with the Person API by making HTTP requests to the provided end
     {
         "first_name": "John",
         "last_name": "Doe",
+        "age": 27,
         "email": "john.doe@example.com"
     }
     ```
@@ -101,6 +104,7 @@ You can interact with the Person API by making HTTP requests to the provided end
         "id": 1,
         "first_name": "John",
         "last_name": "Doe",
+        "age": 27,
         "email": "john.doe@example.com"
     }
     ```
@@ -114,6 +118,7 @@ You can interact with the Person API by making HTTP requests to the provided end
     {
         "first_name": "Jane",
         "last_name": "Doe",
+        "age": 27,
         "email": "Johndoee@gmail.com"
     }
     ```
@@ -125,6 +130,7 @@ You can interact with the Person API by making HTTP requests to the provided end
         "id": 1,
         "first_name": "Jane",
         "last_name": "Doe",
+        "age": 27,
         "email": "jane.doe@example.com"
     }
     ```

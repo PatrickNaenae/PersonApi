@@ -34,6 +34,7 @@ This API allows users to manage person records along with their associated addre
             "id": 1,
             "first_name": "John",
             "last_name": "Doe",
+            "age": 27,
             "email": "john.doe@example.com"
         },
         ...
@@ -52,6 +53,7 @@ This API allows users to manage person records along with their associated addre
         "id": 1,
         "first_name": "John",
         "last_name": "Doe",
+        "age": 27,
         "email": "john.doe@example.com"
     }
     ```
@@ -65,6 +67,7 @@ This API allows users to manage person records along with their associated addre
     {
         "first_name": "John",
         "last_name": "Doe",
+        "age": 27,
         "email": "john.doe@example.com"
     }
     ```
@@ -76,6 +79,7 @@ This API allows users to manage person records along with their associated addre
         "id": 1,
         "first_name": "John",
         "last_name": "Doe",
+        "age": 27,
         "email": "john.doe@example.com"
     }
     ```
@@ -89,6 +93,7 @@ This API allows users to manage person records along with their associated addre
     {
         "first_name": "Jane",
         "last_name": "Doe",
+        "age": 27,
         "email": "Johndoee@gmail.com"
     }
     ```
@@ -100,6 +105,7 @@ This API allows users to manage person records along with their associated addre
         "id": 1,
         "first_name": "Jane",
         "last_name": "Doe",
+        "age": 27,
         "email": "jane.doe@example.com"
     }
     ```
@@ -123,6 +129,7 @@ Copy code
     "id": 1,
     "first_name": "John",
     "last_name": "Doe",
+    "age": 27,
     "email": "john.doe@example.com"
 }
 ```
@@ -139,6 +146,7 @@ Copy code
         "id": 1,
         "first_name": "John",
         "last_name": "Doe",
+        "age": 27,
         "email": "john.doe@example.com"
     },
     ...
@@ -157,6 +165,7 @@ Copy code
         "id": 1,
         "first_name": "John",
         "last_name": "Doe",
+        "age": 27,
         "email": "john.doe@example.com"
     },
     ...
@@ -174,6 +183,7 @@ Copy code
     "id": 1,
     "first_name": "John",
     "last_name": "Doe",
+    "age": 27,
     "email": "john.doe@example.com"
 }
 ```
@@ -186,6 +196,7 @@ Copy code
 {
     "first_name": "Jane",
     "last_name": "Doe",
+    "age": 27,
     "email": "jane.doe@example.com"
 }
 ```
@@ -197,6 +208,7 @@ Copy code
     "id": 1,
     "first_name": "Jane",
     "last_name": "Doe",
+    "age": 27,
     "email": "jane.doe@example.com"
 }
 ```
